@@ -485,4 +485,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Prebuilts GCam Go
+PRODUCT_PACKAGES += \
+    GCamGo
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/system/etc/permissions/com.google.android.apps.cameralite.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.apps.cameralite.xml
+
 include vendor/xiaomi/vayu/vayu-vendor.mk
